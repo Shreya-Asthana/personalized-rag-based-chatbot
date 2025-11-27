@@ -2,3 +2,4 @@
 service.json
 downloads/
 __pycache__/
+chroma_data/

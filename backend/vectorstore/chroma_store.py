@@ -1,7 +1,14 @@
 import chromadb
+import os
 
-client = chromadb.Client()
+# Create persistent directory
+db_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'chroma_data')
+os.makedirs(db_dir, exist_ok=True)
+
+# Use PersistentClient instead of Client
+client = chromadb.PersistentClient(path=db_dir)
 collection = client.get_or_create_collection("documents")
+
 
 def store_chunks(source, text, embedding):
     collection.add(

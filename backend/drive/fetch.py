@@ -16,7 +16,6 @@ def ingest_drive_folder(url):
 
     SCOPES = ["https://www.googleapis.com/auth/drive"]
     
-    # Find service.json in project root (2 levels up from this file)
     service_json_path = os.path.join(os.path.dirname(__file__), '..', '..', 'service.json')
     
     if not os.path.exists(service_json_path):
