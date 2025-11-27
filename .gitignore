@@ -1,0 +1,4 @@
+.env
+service.json
+downloads/
+__pycache__/
