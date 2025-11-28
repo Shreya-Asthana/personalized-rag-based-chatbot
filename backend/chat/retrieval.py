@@ -1,4 +1,4 @@
-from backend.embedding.gemini_embed import embed
+from backend.embedding.embedding import embed
 from backend.vectorstore.chroma_store import search
 from backend.chat.llm import generate_answer
 

@@ -1,1 +1,0 @@
-Frontend React placeholder. You will build UI components calling /api/ingest and /api/chat.
